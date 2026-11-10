@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAG CONSULTANT CO., LTD. | Project & Construction Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Kanit', sans-serif; }
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-[#0b1329] text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0b1329]/90 backdrop-blur-md border-b border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="MAG Consultant Logo" class="h-12 sm:h-14 w-auto object-contain">
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" data-i18n="nav_home" class="text-blue-400 font-semibold">หน้าแรก</a>
+        <a href="about.html" data-i18n="nav_about" class="text-slate-300 hover:text-blue-400 transition-colors">เกี่ยวกับเรา</a>
+        <a href="services.html" data-i18n="nav_services" class="text-slate-300 hover:text-blue-400 transition-colors">บริการของเรา</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio" class="text-slate-300 hover:text-blue-400 transition-colors">ผลงานที่ผ่านมา</a>
+        <a href="contact.html" data-i18n="nav_contact" class="text-slate-300 hover:text-blue-400 transition-colors">ติดต่อเรา</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <div class="flex items-center gap-1 bg-[#131e3a] p-1 rounded-lg border border-blue-900/60 text-xs">
+          <button onclick="changeLanguage('th')" data-lang="th" class="lang-btn px-2.5 py-1 rounded-md transition-all font-bold bg-blue-600 text-white">TH</button>
+          <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn px-2.5 py-1 rounded-md transition-all text-slate-400">EN</button>
+        </div>
+        <a href="contact.html" data-i18n="nav_cta" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/20">
+          ปรึกษาโครงการฟรี
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-blue-950">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0e1730] border-b border-blue-900/50 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" data-i18n="nav_home" class="block py-2 text-slate-300 hover:text-blue-400">หน้าแรก</a>
+      <a href="about.html" data-i18n="nav_about" class="block py-2 text-slate-300 hover:text-blue-400">เกี่ยวกับเรา</a>
+      <a href="services.html" data-i18n="nav_services" class="block py-2 text-slate-300 hover:text-blue-400">บริการของเรา</a>
+      <a href="portfolio.html" data-i18n="nav_portfolio" class="block py-2 text-slate-300 hover:text-blue-400">ผลงานที่ผ่านมา</a>
+      <a href="contact.html" data-i18n="nav_contact" class="block py-2 text-slate-300 hover:text-blue-400">ติดต่อเรา</a>
+      <div class="pt-2 flex items-center justify-between border-t border-blue-900/50">
+        <div class="flex items-center gap-1 bg-[#0b1329] p-1 rounded-lg text-xs">
+          <button onclick="changeLanguage('th')" data-lang="th" class="lang-btn px-3 py-1 rounded-md font-bold bg-blue-600 text-white">TH</button>
+          <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn px-3 py-1 rounded-md text-slate-400">EN</button>
+        </div>
+        <a href="contact.html" data-i18n="nav_cta" class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold text-xs">ปรึกษาโครงการฟรี</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-20 md:pt-48 md:pb-32 bg-[#0b1329] bg-grid-pattern relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs font-semibold mb-6">
+          <i data-lucide="shield-check" class="w-4 h-4"></i> 
+          <span data-i18n="hero_badge">ประสบการณ์บริหารโครงการมากกว่า 20 ปี</span>
+        </div>
+
+        <h1 data-i18n="hero_title" class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+          บริหารงานก่อสร้าง <br>
+          ระดับมืออาชีพ <br>
+          ตรงเวลา คุมงบได้ <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-cyan-400">
+            ได้มาตรฐานสากล
+          </span>
+        </h1>
+
+        <p data-i18n="hero_desc" class="text-lg text-slate-300 mb-8 leading-relaxed">
+          MAG CONSULTANT ผู้เชี่ยวชาญด้านการบริหารโครงการก่อสร้าง (PM, CM, QS) ครอบคลุมทั้งโรงแรม คอนโดมิเนียม ศูนย์การค้า โรงพยาบาล และคลังสินค้า ด้วยผลงานสำเร็จมากกว่า 100 โครงการ
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" data-i18n="btn_proposal" class="px-6 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-600/25">
+            ส่งข้อมูลประเมินโครงการ <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="portfolio.html" data-i18n="btn_portfolio" class="px-6 py-3.5 rounded-lg border border-blue-900/80 bg-blue-950/40 hover:bg-blue-900/40 text-slate-200 font-semibold flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="briefcase" class="w-4 h-4"></i> ชมผลงานที่ผ่านมา
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Stats -->
+  <section class="py-12 bg-[#0e1730] border-y border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <div class="p-6 rounded-xl bg-[#131e3a]/50 border border-blue-900/40">
+        <div class="text-4xl font-bold text-blue-400">20+ ปี</div>
+        <div data-i18n="stat_1" class="text-sm text-slate-400 mt-1">ประสบการณ์ผู้เชี่ยวชาญ</div>
+      </div>
+      <div class="p-6 rounded-xl bg-[#131e3a]/50 border border-blue-900/40">
+        <div class="text-4xl font-bold text-blue-400">100+</div>
+        <div data-i18n="stat_2" class="text-sm text-slate-400 mt-1">โครงการที่สำเร็จ</div>
+      </div>
+      <div class="p-6 rounded-xl bg-[#131e3a]/50 border border-blue-900/40">
+        <div class="text-4xl font-bold text-blue-400">100%</div>
+        <div data-i18n="stat_3" class="text-sm text-slate-400 mt-1">ส่งมอบตรงตามเวลา</div>
+      </div>
+      <div class="p-6 rounded-xl bg-[#131e3a]/50 border border-blue-900/40">
+        <div class="text-4xl font-bold text-blue-400">ISO</div>
+        <div data-i18n="stat_4" class="text-sm text-slate-400 mt-1">มาตรฐานคุณภาพสากล</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-[#0b1329] border-t border-blue-900/50 text-xs text-slate-500 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 MAG CONSULTANT CO., LTD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    const translations = {
+      th: {
+        nav_home: "หน้าแรก",
+        nav_about: "เกี่ยวกับเรา",
+        nav_services: "บริการของเรา",
+        nav_portfolio: "ผลงานที่ผ่านมา",
+        nav_contact: "ติดต่อเรา",
+        nav_cta: "ปรึกษาโครงการฟรี",
+        hero_badge: "ประสบการณ์บริหารโครงการมากกว่า 20 ปี",
+        hero_desc: "MAG CONSULTANT ผู้เชี่ยวชาญด้านการบริหารโครงการก่อสร้าง (PM, CM, QS) ครอบคลุมทั้งโรงแรม คอนโดมิเนียม ศูนย์การค้า โรงพยาบาล และคลังสินค้า ด้วยผลงานสำเร็จมากกว่า 100 โครงการ",
+        btn_proposal: "ส่งข้อมูลประเมินโครงการ",
+        btn_portfolio: "ชมผลงานที่ผ่านมา",
+        stat_1: "ประสบการณ์ผู้เชี่ยวชาญ",
+        stat_2: "โครงการที่สำเร็จ",
+        stat_3: "ส่งมอบตรงตามเวลา",
+        stat_4: "มาตรฐานคุณภาพสากล"
+      },
+      en: {
+        nav_home: "Home",
+        nav_about: "About Us",
+        nav_services: "Services",
+        nav_portfolio: "Portfolio",
+        nav_contact: "Contact",
+        nav_cta: "Free Consultation",
+        hero_badge: "Over 20+ Years of Project Management Experience",
+        hero_desc: "MAG CONSULTANT is a specialist in Project Management (PM), Construction Management (CM), and Quantity Surveying (QS) with over 100 successful projects.",
+        btn_proposal: "Submit Project Proposal",
+        btn_portfolio: "View Portfolio",
+        stat_1: "Expert Experience",
+        stat_2: "Successful Projects",
+        stat_3: "On-Time Delivery",
+        stat_4: "International Quality"
+      }
+    };
+
+    function changeLanguage(lang) {
+      localStorage.setItem('selected_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (key === 'hero_title') {
+          if (lang === 'th') {
+            el.innerHTML = 'บริหารงานก่อสร้าง <br> ระดับมืออาชีพ <br> ตรงเวลา คุมงบได้ <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-cyan-400">ได้มาตรฐานสากล</span>';
+          } else {
+            el.innerHTML = 'Professional Construction <br> Management Services <br> <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-cyan-400">On Time, Within Budget, World-Class Standards</span>';
+          }
+        } else if (translations[lang] && translations[lang][key]) {
+          el.innerText = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        if(btn.getAttribute('data-lang') === lang) {
+          btn.className = "lang-btn px-2.5 py-1 rounded-md transition-all font-bold bg-blue-600 text-white";
+        } else {
+          btn.className = "lang-btn px-2.5 py-1 rounded-md transition-all text-slate-400";
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('selected_lang') || 'th';
+      changeLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>

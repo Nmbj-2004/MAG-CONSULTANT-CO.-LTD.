@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา | MAG CONSULTANT CO., LTD.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Kanit', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0b1329] text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0b1329]/90 backdrop-blur-md border-b border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="MAG Consultant Logo" class="h-12 sm:h-14 w-auto object-contain">
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" data-i18n="nav_home" class="text-slate-300 hover:text-blue-400 transition-colors">หน้าแรก</a>
+        <a href="about.html" data-i18n="nav_about" class="text-slate-300 hover:text-blue-400 transition-colors">เกี่ยวกับเรา</a>
+        <a href="services.html" data-i18n="nav_services" class="text-slate-300 hover:text-blue-400 transition-colors">บริการของเรา</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio" class="text-slate-300 hover:text-blue-400 transition-colors">ผลงานที่ผ่านมา</a>
+        <a href="contact.html" data-i18n="nav_contact" class="text-blue-400 font-semibold transition-colors">ติดต่อเรา</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <div class="flex items-center gap-1 bg-[#131e3a] p-1 rounded-lg border border-blue-900/60 text-xs">
+          <button onclick="changeLanguage('th')" data-lang="th" class="lang-btn px-2.5 py-1 rounded-md transition-all font-bold bg-blue-600 text-white">TH</button>
+          <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn px-2.5 py-1 rounded-md transition-all text-slate-400">EN</button>
+        </div>
+        <a href="contact.html" data-i18n="nav_cta" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/20">
+          ปรึกษาโครงการฟรี
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-blue-950">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0e1730] border-b border-blue-900/50 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" data-i18n="nav_home" class="block py-2 text-slate-300 hover:text-blue-400">หน้าแรก</a>
+      <a href="about.html" data-i18n="nav_about" class="block py-2 text-slate-300 hover:text-blue-400">เกี่ยวกับเรา</a>
+      <a href="services.html" data-i18n="nav_services" class="block py-2 text-slate-300 hover:text-blue-400">บริการของเรา</a>
+      <a href="portfolio.html" data-i18n="nav_portfolio" class="block py-2 text-slate-300 hover:text-blue-400">ผลงานที่ผ่านมา</a>
+      <a href="contact.html" data-i18n="nav_contact" class="block py-2 text-slate-300 hover:text-blue-400">ติดต่อเรา</a>
+      <div class="pt-2 flex items-center justify-between border-t border-blue-900/50">
+        <div class="flex items-center gap-1 bg-[#0b1329] p-1 rounded-lg text-xs">
+          <button onclick="changeLanguage('th')" data-lang="th" class="lang-btn px-3 py-1 rounded-md font-bold bg-blue-600 text-white">TH</button>
+          <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn px-3 py-1 rounded-md text-slate-400">EN</button>
+        </div>
+        <a href="contact.html" data-i18n="nav_cta" class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold text-xs">ปรึกษาโครงการฟรี</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="pt-36 pb-16 bg-[#0e1730] border-b border-blue-900/50 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <span class="text-blue-400 text-sm font-semibold uppercase tracking-wider">Contact Us</span>
+      <h1 data-i18n="contact_title" class="text-4xl font-bold text-white mt-2">ติดต่อทีมงานและขอใบเสนอราคา</h1>
+      <p data-i18n="contact_subtitle" class="text-slate-400 mt-2 max-w-xl mx-auto">เราพร้อมให้คำปรึกษาแก่เจ้าของโครงการและผู้พัฒนาอสังหาริมทรัพย์ทุกระดับ</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      
+      <!-- ฝั่งซ้าย: ข้อมูลสำนักงาน และ แผนที่พิกัดจริง -->
+      <div class="p-8 rounded-2xl bg-[#0e1730] border border-blue-900/50 space-y-6">
+        <h2 data-i18n="info_title" class="text-2xl font-bold text-white mb-2">MAG CONSULTANT CO., LTD.</h2>
+        
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-[#131e3a] border border-blue-900/60 text-blue-400 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div data-i18n="info_address_label" class="text-xs font-semibold text-slate-400 uppercase">Address</div>
+            <div data-i18n="info_address" class="text-sm text-slate-200 mt-1 leading-relaxed">เลขที่ 55 ซ.จรัญสนิทวงศ์ 89/2 ถ.จรัญสนิทวงศ์ แขวงบางอ้อ เขตบางพลัด กรุงเทพฯ 10700</div>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-[#131e3a] border border-blue-900/60 text-blue-400 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div data-i18n="info_phone_label" class="text-xs font-semibold text-slate-400 uppercase">Phone Number</div>
+            <div class="text-sm text-slate-200 mt-1">+66 65-528-7891</div>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-[#131e3a] border border-blue-900/60 text-blue-400 flex items-center justify-center shrink-0">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div data-i18n="info_email_label" class="text-xs font-semibold text-slate-400 uppercase">Email</div>
+            <div class="text-sm text-slate-200 mt-1">pmagconsultant@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-[#131e3a] border border-blue-900/60 text-blue-400 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div data-i18n="info_open_label" class="text-xs font-semibold text-slate-400 uppercase">Opening Hours</div>
+            <div class="text-sm text-slate-200 mt-1">09.00 A.M. - 05.30 P.M.</div>
+          </div>
+        </div>
+
+        <!-- 🗺️ Google Maps ซูมพิกัดซอยจรัญฯ 89/2 แบบชัดเจน -->
+        <div class="pt-4">
+          <div class="flex justify-between items-center mb-2">
+            <span data-i18n="map_label" class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Location Map</span>
+            <a href="https://maps.app.goo.gl/uXjMv755c4H9v4eB7" target="_blank" class="text-xs text-blue-400 hover:underline flex items-center gap-1">
+              เปิดใน Maps <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-blue-900/60 shadow-lg">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.664402096739!2d100.5103437!3d13.8055416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b8c06e866ed%3A0x8673b2a26569ec98!2sSoi%20Charan%20Sanit%20Wong%2089%2F2%2C%20Bang%20A-o%2C%20Bang%20Phlat%2C%20Bangkok%2010700!5e0!3m2!1sth!2sth!4v1700000000000!5m2!1sth!2sth" 
+              width="100%" 
+              height="280" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              class="w-full grayscale contrast-125 hover:grayscale-0 transition-all duration-300">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ฝั่งขวา: ฟอร์มติดต่อ -->
+      <div class="p-8 rounded-2xl bg-[#0e1730] border border-blue-900/50">
+        <h2 data-i18n="form_header" class="text-2xl font-bold text-white mb-6">ส่งข้อความถึงเรา</h2>
+        <form onsubmit="alert('ส่งข้อมูลเรียบร้อยแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด'); return false;" class="space-y-4">
+          <div>
+            <label data-i18n="form_name" class="block text-xs font-semibold text-slate-300 uppercase mb-2">ชื่อผู้ติดต่อ / บริษัท</label>
+            <input type="text" required class="w-full px-4 py-3 rounded-lg bg-[#0b1329] border border-blue-900/60 text-slate-100 focus:outline-none focus:border-blue-500">
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label data-i18n="form_phone" class="block text-xs font-semibold text-slate-300 uppercase mb-2">เบอร์โทรศัพท์</label>
+              <input type="tel" required class="w-full px-4 py-3 rounded-lg bg-[#0b1329] border border-blue-900/60 text-slate-100 focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+              <label data-i18n="form_email" class="block text-xs font-semibold text-slate-300 uppercase mb-2">อีเมล</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-lg bg-[#0b1329] border border-blue-900/60 text-slate-100 focus:outline-none focus:border-blue-500">
+            </div>
+          </div>
+          <div>
+            <label data-i18n="form_msg" class="block text-xs font-semibold text-slate-300 uppercase mb-2">ข้อความ / รายละเอียดโครงการ</label>
+            <textarea rows="6" class="w-full px-4 py-3 rounded-lg bg-[#0b1329] border border-blue-900/60 text-slate-100 focus:outline-none focus:border-blue-500"></textarea>
+          </div>
+          <button type="submit" data-i18n="form_submit" class="w-full py-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-lg shadow-blue-600/20">
+            ส่งข้อมูลติดต่อ
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-[#0b1329] border-t border-blue-900/50 text-xs text-slate-500 text-center">
+    <div class="max-w-7xl mx-auto px-4"><p>© 2026 MAG CONSULTANT CO., LTD. All rights reserved.</p></div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    const translations = {
+      th: {
+        nav_home: "หน้าแรก", nav_about: "เกี่ยวกับเรา", nav_services: "บริการของเรา", nav_portfolio: "ผลงานที่ผ่านมา", nav_contact: "ติดต่อเรา", nav_cta: "ปรึกษาโครงการฟรี",
+        contact_title: "ติดต่อทีมงานและขอใบเสนอราคา", contact_subtitle: "เราพร้อมให้คำปรึกษาแก่เจ้าของโครงการและผู้พัฒนาอสังหาริมทรัพย์ทุกระดับ",
+        info_title: "ข้อมูลติดต่อสำนักงาน", info_address_label: "Address", info_phone_label: "Phone Number", info_email_label: "Email", info_open_label: "Opening Hours", map_label: "Location Map",
+        info_address: "เลขที่ 55 ซ.จรัญสนิทวงศ์ 89/2 ถ.จรัญสนิทวงศ์ แขวงบางอ้อ เขตบางพลัด กรุงเทพฯ 10700",
+        form_header: "ส่งข้อความถึงเรา", form_name: "ชื่อผู้ติดต่อ / บริษัท", form_phone: "เบอร์โทรศัพท์", form_email: "อีเมล", form_msg: "ข้อความ / รายละเอียดโครงการ", form_submit: "ส่งข้อมูลติดต่อ"
+      },
+      en: {
+        nav_home: "Home", nav_about: "About Us", nav_services: "Services", nav_portfolio: "Portfolio", nav_contact: "Contact", nav_cta: "Free Consultation",
+        contact_title: "Contact Us & Proposal Request", contact_subtitle: "Ready to assist project owners and real estate developers at all levels.",
+        info_title: "Headquarters Office", info_address_label: "Address", info_phone_label: "Phone Number", info_email_label: "Email", info_open_label: "Opening Hours", map_label: "Location Map",
+        info_address: "55 Soi Charan Sanit Wong 89/2, Charan Sanit Wong Rd., Bang A-o, Bang Phlat, Bangkok 10700, Thailand",
+        form_header: "Send Us a Message", form_name: "Contact Name / Company", form_phone: "Phone Number", form_email: "Email Address", form_msg: "Message / Project Details", form_submit: "Submit Request"
+      }
+    };
+
+    function changeLanguage(lang) {
+      localStorage.setItem('selected_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang]?.[key]) el.innerText = translations[lang][key];
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.className = btn.getAttribute('data-lang') === lang ? "lang-btn px-2.5 py-1 rounded-md font-bold bg-blue-600 text-white" : "lang-btn px-2.5 py-1 rounded-md text-slate-400";
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => changeLanguage(localStorage.getItem('selected_lang') || 'th'));
+  </script>
+</body>
+</html>

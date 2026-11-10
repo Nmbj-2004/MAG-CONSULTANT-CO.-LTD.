@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บริการของเรา | MAG CONSULTANT CO., LTD.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Kanit', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0b1329] text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0b1329]/90 backdrop-blur-md border-b border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="MAG Consultant Logo" class="h-12 sm:h-14 w-auto object-contain">
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" data-i18n="nav_home" class="text-slate-300 hover:text-blue-400 transition-colors">หน้าแรก</a>
+        <a href="about.html" data-i18n="nav_about" class="text-slate-300 hover:text-blue-400 transition-colors">เกี่ยวกับเรา</a>
+        <a href="services.html" data-i18n="nav_services" class="text-blue-400 font-semibold transition-colors">บริการของเรา</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio" class="text-slate-300 hover:text-blue-400 transition-colors">ผลงานที่ผ่านมา</a>
+        <a href="contact.html" data-i18n="nav_contact" class="text-slate-300 hover:text-blue-400 transition-colors">ติดต่อเรา</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-4">
+        <div class="flex items-center gap-1 bg-[#131e3a] p-1 rounded-lg border border-blue-900/60 text-xs">
+          <button onclick="changeLanguage('th')" data-lang="th" class="lang-btn px-2.5 py-1 rounded-md font-bold bg-blue-600 text-white">TH</button>
+          <button onclick="changeLanguage('en')" data-lang="en" class="lang-btn px-2.5 py-1 rounded-md text-slate-400">EN</button>
+        </div>
+        <a href="contact.html" data-i18n="nav_cta" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/20">ปรึกษาโครงการฟรี</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="pt-36 pb-16 bg-[#0e1730] border-b border-blue-900/50 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <span class="text-blue-400 text-sm font-semibold uppercase tracking-wider">Our Services</span>
+      <h1 data-i18n="serv_title" class="text-4xl font-bold text-white mt-2">บริการที่ปรึกษาและบริหารงานก่อสร้าง</h1>
+      <p data-i18n="serv_subtitle" class="text-slate-400 mt-2 max-w-xl mx-auto">ครอบคลุมทุกขั้นตอนการพัฒนาก่อสร้าง ตั้งแต่เริ่มต้นจนส่งมอบงาน</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl bg-[#0e1730] border border-blue-900/50">
+        <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-400 flex items-center justify-center mb-6"><i data-lucide="clipboard-check" class="w-6 h-6"></i></div>
+        <h3 class="text-2xl font-bold text-white mb-4">Project Management (PM)</h3>
+        <p data-i18n="pm_desc" class="text-slate-400 text-sm leading-relaxed mb-4">บริหารภาพรวมโครงการ บริหารความเสี่ยง ประสานงานระหว่างสถาปนิก วิศวกร และผู้รับเหมา เพื่อให้บรรลุเป้าหมายหลักของเจ้าของโครงการ</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-[#0e1730] border border-blue-900/50">
+        <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-400 flex items-center justify-center mb-6"><i data-lucide="hard-hat" class="w-6 h-6"></i></div>
+        <h3 class="text-2xl font-bold text-white mb-4">Construction Management (CM)</h3>
+        <p data-i18n="cm_desc" class="text-slate-400 text-sm leading-relaxed mb-4">ควบคุมการก่อสร้าง ณ พื้นที่จริง ตรวจสอบมาตรฐานวิศวกรรม ควบคุมแผนงานรายวัน และกวดขันด้านความปลอดภัยอย่างเข้มงวด</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-[#0e1730] border border-blue-900/50">
+        <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-400 flex items-center justify-center mb-6"><i data-lucide="calculator" class="w-6 h-6"></i></div>
+        <h3 class="text-2xl font-bold text-white mb-4">Quantity Surveyor (QS)</h3>
+        <p data-i18n="qs_desc" class="text-slate-400 text-sm leading-relaxed mb-4">ถอดแบบ ถอดปริมาณงาน ประเมินราคากลาง ตรวจสอบงานงวดเบิกจ่ายของผู้รับเหมา เพื่อควบคุมต้นทุนไม่ให้บานปลาย</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-[#0b1329] border-t border-blue-900/50 text-xs text-slate-500 text-center">
+    <div class="max-w-7xl mx-auto px-4"><p>© 2026 MAG CONSULTANT CO., LTD. All rights reserved.</p></div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const translations = {
+      th: {
+        nav_home: "หน้าแรก", nav_about: "เกี่ยวกับเรา", nav_services: "บริการของเรา", nav_portfolio: "ผลงานที่ผ่านมา", nav_contact: "ติดต่อเรา", nav_cta: "ปรึกษาโครงการฟรี",
+        serv_title: "บริการที่ปรึกษาและบริหารงานก่อสร้าง", serv_subtitle: "ครอบคลุมทุกขั้นตอนการพัฒนาก่อสร้าง ตั้งแต่เริ่มต้นจนส่งมอบงาน",
+        pm_desc: "บริหารภาพรวมโครงการ บริหารความเสี่ยง ประสานงานระหว่างสถาปนิก วิศวกร และผู้รับเหมา เพื่อให้บรรลุเป้าหมายหลักของเจ้าของโครงการ",
+        cm_desc: "ควบคุมการก่อสร้าง ณ พื้นที่จริง ตรวจสอบมาตรฐานวิศวกรรม ควบคุมแผนงานรายวัน และกวดขันด้านความปลอดภัยอย่างเข้มงวด",
+        qs_desc: "ถอดแบบ ถอดปริมาณงาน ประเมินราคากลาง ตรวจสอบงานงวดเบิกจ่ายของผู้รับเหมา เพื่อควบคุมต้นทุนไม่ให้บานปลาย"
+      },
+      en: {
+        nav_home: "Home", nav_about: "About Us", nav_services: "Services", nav_portfolio: "Portfolio", nav_contact: "Contact", nav_cta: "Free Consultation",
+        serv_title: "Consultancy & Management Services", serv_subtitle: "Comprehensive solutions covering the entire development process from concept to close-out.",
+        pm_desc: "Overall project management, risk mitigation, and coordination across stakeholders to ensure project goals are met.",
+        cm_desc: "On-site construction supervision, quality control (QA/QC), and strict safety monitoring by experienced engineers.",
+        qs_desc: "Quantity surveying, bill of quantities (BOQ), cost estimation, and payment verification to avoid budget overruns."
+      }
+    };
+    function changeLanguage(lang) {
+      localStorage.setItem('selected_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang]?.[key]) el.innerText = translations[lang][key];
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.className = btn.getAttribute('data-lang') === lang ? "lang-btn px-2.5 py-1 rounded-md font-bold bg-blue-600 text-white" : "lang-btn px-2.5 py-1 rounded-md text-slate-400";
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => changeLanguage(localStorage.getItem('selected_lang') || 'th'));
+  </script>
+</body>
+</html>
